@@ -100,7 +100,7 @@
 
 ### 下载现成的 APK
 
-去 [Releases](../../releases) 下载最新的 `dafeiyu-vX.X.apk`。
+去 [Releases](../../releases) 下载最新的 `dafeiyu-v10.1.apk`。
 
 **Android 7.0 以上**都能装。
 
