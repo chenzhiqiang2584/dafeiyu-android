@@ -96,6 +96,8 @@
 
 ## 安装
 
+> 📖 **第一次装？看[图文安装教程](docs/安装教程.md)** —— 从申请 API Key 到发第一条消息，一步不落。
+
 ### 下载现成的 APK
 
 去 [Releases](../../releases) 下载最新的 `dafeiyu-vX.X.apk`。
