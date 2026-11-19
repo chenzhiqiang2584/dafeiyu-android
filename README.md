@@ -5,7 +5,7 @@
 一条圆滚滚的蓝鲸，住在你的手机里。会聊天、会记事、会生气、会撒娇。
 
 <p align="center">
-  <img src="docs/screenshot-chat.png" width="240" alt="聊天界面">
+  <img src="docs/screenshot-chat.jpg" width="240" alt="聊天界面">
 </p>
 
 ---
