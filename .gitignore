@@ -1,0 +1,36 @@
+# 构建产物
+*.apk
+*.aab
+*.idsig
+build/
+.gradle/
+local.properties
+
+# 签名文件（绝对不能上传）
+*.jks
+*.keystore
+*.p12
+keystore.properties
+
+# 临时文件
+tmp/
+*.log
+*.iml
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python 脚本产物
+__pycache__/
+*.pyc
+
+# gradle wrapper 的二进制 jar 不提交（用 Android Studio 打开会自动生成）
+gradle/wrapper/gradle-wrapper.jar
+gradlew
+gradlew.bat
+
+# 但 GitHub Actions 要提交
+!.github/workflows/*.yml
+
+# 发布用的 APK 副本（通过 Release 上传，不进仓库）
+dist/

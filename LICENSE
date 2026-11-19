@@ -1,0 +1,31 @@
+MIT License
+
+Copyright (c) 2026 eat-rice-big-fat-fish (原始项目)
+Copyright (c) 2026 dafeiyu-app (修改版)
+
+---
+
+本项目基于以下项目二次开发：
+  eat-rice-big-fat-fish-mobile-phone
+  作者：SKSD-RGB (https://github.com/SKSD-RGB)
+  地址：https://github.com/SKSD-RGB/eat-rice-big-fat-fish-mobile-phone
+
+特别感谢原作者 SKSD-RGB 提供的框架 —— 没有它就没有这个修改版。
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

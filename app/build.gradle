@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+// 从 keystore.properties 读签名信息（没有就用 debug 签名）
+def keystorePropsFile = rootProject.file('keystore.properties')
+def keystoreProps = new Properties()
+if (keystorePropsFile.exists()) {
+    keystoreProps.load(new FileInputStream(keystorePropsFile))
+}
+
+android {
+    namespace 'com.dafeiyu.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.dafeiyu.app"
+        minSdk 24
+        targetSdk 34
+        versionCode 142
+        versionName "10.1"
+    }
+
+    signingConfigs {
+        if (keystorePropsFile.exists()) {
+            release {
+                storeFile file(keystoreProps['storeFile'])
+                storePassword keystoreProps['storePassword']
+                keyAlias keystoreProps['keyAlias']
+                keyPassword keystoreProps['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                    'proguard-rules.pro'
+            if (keystorePropsFile.exists()) {
+                signingConfig signingConfigs.release
+            }
+        }
+        debug {
+            if (keystorePropsFile.exists()) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // 源码和资源在项目根目录下（不是标准的 app/src/main）
+    sourceSets {
+        main {
+            manifest.srcFile '../AndroidManifest.xml'
+            java.srcDirs = ['../src']
+            res.srcDirs = ['../res']
+            assets.srcDirs = ['../assets']
+        }
+    }
+
+    // 关键：不让 resources.arsc 被压缩
+    // 某些 ROM（vivo/iQOO）对压缩过的 arsc 会装不上
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/*.kotlin_module']
+        }
+    }
+
+    androidResources {
+        noCompress += ['arsc']
+    }
+}
+
+// 项目零第三方依赖
+dependencies {
+}
