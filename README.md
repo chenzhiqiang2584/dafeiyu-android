@@ -2,6 +2,11 @@
 
 **装在手机上的 AI 伴侣。** 不需要电脑、不需要服务器、不需要网桥 —— 填一个 DeepSeek API Key 就能聊。
 
+[![Build APK](https://github.com/chenzhiqiang2584/dafeiyu-android/actions/workflows/build.yml/badge.svg)](https://github.com/chenzhiqiang2584/dafeiyu-android/actions/workflows/build.yml)
+[![Release](https://img.shields.io/github/v/release/chenzhiqiang2584/dafeiyu-android?label=release)](https://github.com/chenzhiqiang2584/dafeiyu-android/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![Android](https://img.shields.io/badge/Android-7.0%2B-green.svg)
+
 一条圆滚滚的蓝鲸，住在你的手机里。会聊天、会记事、会生气、会撒娇。
 
 <p align="center">
